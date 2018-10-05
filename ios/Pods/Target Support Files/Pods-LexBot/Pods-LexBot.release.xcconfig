@@ -1,0 +1,9 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AWSCore" "${PODS_ROOT}/Headers/Public/AWSLex" "${PODS_ROOT}/Headers/Public/JSQMessagesViewController" "${PODS_ROOT}/Headers/Public/JSQSystemSoundPlayer"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AWSCore" "$PODS_CONFIGURATION_BUILD_DIR/AWSLex" "$PODS_CONFIGURATION_BUILD_DIR/JSQMessagesViewController" "$PODS_CONFIGURATION_BUILD_DIR/JSQSystemSoundPlayer" "${PODS_ROOT}/AWSLex/AWSLex/Bluefront"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AWSCore" -isystem "${PODS_ROOT}/Headers/Public/AWSLex" -isystem "${PODS_ROOT}/Headers/Public/JSQMessagesViewController" -isystem "${PODS_ROOT}/Headers/Public/JSQSystemSoundPlayer"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AWSCore" -l"AWSLex" -l"BlueAudioSourceiOS" -l"JSQMessagesViewController" -l"JSQSystemSoundPlayer" -l"sqlite3" -l"z" -framework "AVFoundation" -framework "AudioToolbox" -framework "CoreGraphics" -framework "CoreLocation" -framework "Foundation" -framework "MapKit" -framework "QuartzCore" -framework "SystemConfiguration" -framework "UIKit"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

@@ -1,0 +1,1 @@
+../../../AWSLex/AWSLex/AWSLexResources.h
